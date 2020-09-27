@@ -6,28 +6,42 @@
   font-style: normal;
 }
 .logo {
+  height: 30px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.03em;
   font-size: 0px;
   text-decoration: none;
-  color: black;
+  color: $color_active-1;
   &:visited {
     color: inherit;
+    text-decoration: inherit;
   }
 }
 .logo__text {
+  line-height: 30px;
   font-size: 26px;
   line-height: 31px;
 }
 
-.logo__text--blue {
+.text--blue {
   color: $color_active-1;
 }
-.logo__text--dark {
+.text--dark {
   color: $color_text-dark;
 }
-.logo__text--light {
+.text--light {
   color: $color_text-light;
+}
+
+.logo--header {
+  // .header .logo
+  @include CenteredFlex();
+  margin-right: 93px;
+}
+.logo--footer {
+  // .header .logo
+  @include CenteredFlex();
+  margin-right: 93px;
 }

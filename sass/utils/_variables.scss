@@ -10,13 +10,17 @@ $color_text-grey: #757575;
 $color_text-light: #ffffff;
 $color_text-transp: rgba(255, 255, 255, 0.6);
 
-$color_header-background: grey;
-$color_baner-underlay: #2f303a;
+$color_header-background: white;
+$color_hero-background: white;
+$color_hero-underlay: #2f303a;
 $color_team-background: #f5f4fa;
 $color_footer-background: #2f303a;
 $color_portfolio-background: #fff;
 
-$width_desktop: 1600px;
+$height_button: 50px;
 
-$duration_transition: 1s;
+$width_desktop: 1600px;
+$width_button: 200px;
+
+$duration_transition: 2s;
 $transition-common: var($duration_transition) cubic-bezier(0.4, 0, 0.2, 1);

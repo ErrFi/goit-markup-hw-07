@@ -1,0 +1,220 @@
+/* ======= Backdrop with form ======= */
+.backdrop {
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 50px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: Roboto;
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity;
+  transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 530px;
+  min-height: 580px;
+  padding: 40px;
+}
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  overflow: hidden;
+  border: none;
+  border-radius: 15px;
+  font-size: 11px;
+}
+.form {
+  max-width: 530px;
+  min-height: 580px;
+  margin: auto;
+  padding: 40px;
+  /* outline: 1px solid tomato; */
+  background: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  color: var(--text-dark);
+}
+
+form .h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-dark);
+}
+.label {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.field {
+  position: relative;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.field.comment {
+  height: 120px;
+  margin-bottom: 20px;
+}
+.field.confirm {
+  position: relative;
+  display: inline-block;
+  /* justify-content: center; */
+  height: 24px;
+  width: auto;
+  /* margin: auto; */
+  margin-bottom: 30px;
+  padding: 0px 12px;
+  /* outline: 1px solid green; */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.checkbox.confirm {
+  position: absolute;
+  /* visibility: hidden; */
+  opacity: 0;
+}
+.label.confirm {
+  position: relative;
+
+  /* display: block; */
+  width: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: 0;
+  line-height: 24px;
+  padding-left: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  /* justify-content: center; */
+  transition-property: color;
+  transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* transition: 1s cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.label.confirm:hover {
+  color: $color_active-1;
+}
+.checkbox.confirm:focus + .label.confirm {
+  color: $color_active-1;
+}
+.label.confirm::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  /* display: block; */
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid var(--text-dark);
+  border-radius: 2px;
+  background-color: white;
+  background-image: url(../images/modal/icon_check.svg);
+  transition-property: border-color, background-color;
+  transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox.confirm:checked + .label.confirm::before {
+  border-color: $color_active-1;
+  background-color: $color_active-1;
+}
+
+.link.confirm {
+  text-decoration: underline;
+  color: $color_active-1;
+}
+
+.input.comment {
+  padding-left: 12px;
+  resize: none;
+}
+.input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  fill: var(--text-dark);
+  transition-property: fill;
+  transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form .icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: inherit;
+}
+.input:hover + .icon-wrap,
+.input:focus + .icon-wrap {
+  fill: $color_active-1;
+}
+.form .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text-light);
+}

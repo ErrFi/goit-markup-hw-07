@@ -36,33 +36,22 @@
 
 /* ===== Hero section ====== */
 .hero {
-  /* width: 1600px; */
+  background-color: white;
   font-family: Roboto;
   font-style: normal;
-  /* background-color: var(--baner-background); */
 }
 
-.hero > .container {
+.hero .container {
   width: 1600px;
   height: 600px;
   margin: auto;
-  background-color: var(--baner-underlay);
+  background-color: #2f303a;
 }
 
-.hero .h1 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.hero .hero-h1 {
   width: 696px;
-  /* height: 320px; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  /* padding-top: 200px; */
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-light);
+  margin: 0px auto 30px;
+  color: #ffffff;
 }
 
 .baner-overlay {
@@ -75,30 +64,12 @@
           justify-content: center;
 }
 
-.hero .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hero_button {
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* margin-top: 30px; */
 }
 
-.hero .button > .text {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
-  letter-spacing: 0.06em;
-  color: var(--text-light);
-}
-
+/* ===== Hero section ====== */
 /* ======= Features section decoration ======= */
 .features {
   display: block;

@@ -1,5 +1,22 @@
-%list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@import "./mixins";
+%container {
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 15px;
+
+  @include for-size(mobile) {
+    width: 100%;
+    padding: 60px 15px;
+  }
+
+  @include for-size(tablet) {
+    width: $width_tablet;
+    padding: 60px 15px;
+  }
+
+  @include for-size(desktop) {
+    width: $width_desktop;
+    padding: 94px 215px;
+  }
 }

@@ -13,14 +13,19 @@ $color_text-transp: rgba(255, 255, 255, 0.6);
 $color_header-background: white;
 $color_hero-background: white;
 $color_hero-underlay: #2f303a;
+$color_features_icon-background: #f5f4fa;
 $color_team-background: #f5f4fa;
+$color_team_mamber-background: #fff;
 $color_footer-background: #2f303a;
 $color_portfolio-background: #fff;
 
 $height_button: 50px;
 
 $width_desktop: 1600px;
+$width_tablet: 768px;
+$width_mobile: 480px;
+
 $width_button: 200px;
 
-$duration_transition: 2s;
-$transition-common: var($duration_transition) cubic-bezier(0.4, 0, 0.2, 1);
+$duration_transition: 1s;
+$transition-common: $duration_transition cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,0 +1,17 @@
+@import "../utils/variables";
+.list_social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   width: 206px;
+}
+// ====icons====
+.icon {
+  //   display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+}
+.social_icon {
+  height: 20px;
+  width: 20px;
+}

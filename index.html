@@ -3,17 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio_Test</title>
+    <title>WebStudio</title>
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
+    <!-- == Header & Navigation  ================= -->
+    <header class="header">
+      <div class="container__header"></div>
+    </header>
+    <!-- == Hero  ================= -->
+    <!-- блок-герой з головним заголовком(гаслом) та картинкою  -->
+    <div class="hero">
+      <div class="container__hero">
+        <div class="hero-content">
+          <h1 class="h1">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <!-- <a class="button" href="#">
+            <span class="text"> Заказать услугу </span>
+          </a> -->
+          <button class="button btn" data-modal-open>
+            <span class="text"> Заказать услугу </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- == Features  ================= -->
     <section class="features">
       <div class="container__features">
         <h2 class="section_title title--features">
           <span>Наши особенности</span>
         </h2>
-        <ul class="list greed">
-          <li class="greed__item greed__item--feature">
+        <ul class="list grid">
+          <li class="grid__item grid__item--feature">
             <div class="feature__icon-container">
               <!-- <span>Внимание к деталям</span> -->
               <svg class="feature__icon">
@@ -28,7 +51,7 @@
               формированию позиции.
             </p>
           </li>
-          <li class="greed__item greed__item--feature">
+          <li class="grid__item grid__item--feature">
             <div class="feature__icon-container">
               <svg class="feature__icon">
                 <use
@@ -43,7 +66,7 @@
               влечет за собой.
             </p>
           </li>
-          <li class="greed__item greed__item--feature">
+          <li class="grid__item grid__item--feature">
             <div class="feature__icon-container">
               <svg class="feature__icon">
                 <use
@@ -58,7 +81,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li class="greed__item greed__item--feature">
+          <li class="grid__item grid__item--feature">
             <div class="feature__icon-container">
               <svg class="feature__icon">
                 <use
@@ -82,18 +105,18 @@
         <h2 class="section_title">
           <span>Чем мы занимаемся</span>
         </h2>
-        <ul class="list greed">
-          <li class="greed__item greed__item--directions">
+        <ul class="list grid">
+          <li class="grid__item grid__item--directions">
             <div class="direction__label">
               <span>Десктопные приложения</span>
             </div>
           </li>
-          <li class="greed__item greed__item--directions">
+          <li class="grid__item grid__item--directions">
             <div class="direction__label">
               <span>Мобильные приложения</span>
             </div>
           </li>
-          <li class="greed__item greed__item--directions">
+          <li class="grid__item grid__item--directions">
             <div class="direction__label">
               <span>Дизайнерские решения</span>
             </div>
@@ -107,8 +130,8 @@
         <h2 class="section_title">
           <span>Наша команда</span>
         </h2>
-        <ul class="list greed">
-          <li class="greed__item greed__item--team">
+        <ul class="list grid">
+          <li class="grid__item grid__item--team">
             <img
               class="team__member__pict"
               src="./images/studio/team/ProDes.jpg"
@@ -157,7 +180,7 @@
               </ul>
             </div>
           </li>
-          <li class="greed__item greed__item--team">
+          <li class="grid__item grid__item--team">
             <img
               class="team__member__pict"
               src="./images/studio/team/FroDev.jpg"
@@ -206,7 +229,7 @@
               </ul>
             </div>
           </li>
-          <li class="greed__item greed__item--team">
+          <li class="grid__item grid__item--team">
             <img
               class="team__member__pict"
               src="./images/studio/team/Marketing.jpg"
@@ -255,7 +278,7 @@
               </ul>
             </div>
           </li>
-          <li class="greed__item greed__item--team">
+          <li class="grid__item grid__item--team">
             <img
               class="team__member__pict"
               src="./images/studio/team/UIDes.jpg"
@@ -313,9 +336,9 @@
         <h2 class="section_title">
           <span>Постоянные клиенты</span>
         </h2>
-        <ul class="list greed">
+        <ul class="list grid">
           <!-- === client 1 ====== -->
-          <li class="greed__item greed__item--client">
+          <li class="grid__item grid__item--client">
             <a href="#" class="link client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -332,7 +355,7 @@
             </p>
           </li>
           <!-- === client 2 ====== -->
-          <li class="greed__item greed__item--client">
+          <li class="grid__item grid__item--client">
             <a href="#" class="link client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -349,7 +372,7 @@
             </p>
           </li>
           <!-- === client 3 ====== -->
-          <li class="greed__item greed__item--client">
+          <li class="grid__item grid__item--client">
             <a href="#" class="link client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -366,7 +389,7 @@
             </p>
           </li>
           <!-- === client 4 ====== -->
-          <li class="greed__item greed__item--client">
+          <li class="grid__item grid__item--client">
             <a href="#" class="link client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -383,7 +406,7 @@
             </p>
           </li>
           <!-- === client 5 ====== -->
-          <li class="greed__item greed__item--client">
+          <li class="grid__item grid__item--client">
             <a href="#" class="link client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -400,7 +423,7 @@
             </p>
           </li>
           <!-- === client 5 ====== -->
-          <li class="greed__item greed__item--client">
+          <li class="grid__item grid__item--client">
             <a href="#" class="link client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -419,50 +442,10 @@
         </ul>
       </div>
     </section>
-
+    <!-- === Footer ========== -->
+    <footer class="footer">
+      <div class="container__footer"></div>
+    </footer>
     <!-- === Test ============= -->
-    <section class="social">
-      <div class="container">
-        <h2 class="section_title">Title</h2>
-        <ul class="list list_social">
-          <li class="list_item list_item--socials">
-            <a href="./index.html" class="link link_social">
-              <svg class="icon social_icon">
-                <use
-                  href="./images/common/icons/social-icons.svg#instagram"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li class="list_item list_item--socials">
-            <a href="#" class="link link_social">
-              <svg class="icon social_icon">
-                <use
-                  href="./images/common/icons/social-icons.svg#twitter"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li class="list_item list_item--socials">
-            <a href="#" class="link link_social">
-              <svg class="icon social_icon">
-                <use
-                  href="./images/common/icons/social-icons.svg#facebook"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li class="list_item list_item--socials">
-            <a href="#" class="link link_social">
-              <svg class="icon social_icon">
-                <use
-                  href="./images/common/icons/social-icons.svg#linkedin"
-                ></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
   </body>
 </html>

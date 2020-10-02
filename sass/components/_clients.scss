@@ -17,7 +17,7 @@
 .title--clients {
   //   display: none;
 }
-.greed__item--client {
+.grid__item--client {
   position: relative;
   //   height: 294px;
   // width: auto;
@@ -39,7 +39,7 @@
       margin-right: 30px;
     }
 
-    &:nth-child(-n + 2) {
+    &:nth-child(-n + 4) {
       margin-bottom: calc(30px);
     }
   }

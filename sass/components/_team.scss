@@ -7,7 +7,7 @@
 .container__team {
   @extend %container;
 }
-.greed__item--team {
+.grid__item--team {
   background-color: $color_team_mamber-background;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);

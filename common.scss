@@ -7,6 +7,10 @@
 @import "./sass/components/team";
 @import "./sass/components/directions";
 @import "./sass/components/features";
+@import "./sass/components/hero";
+@import "./sass/components/header";
+@import "./sass/components/footer";
+@import "./sass/components/portfolio";
 
 html {
   box-sizing: border-box;
@@ -18,6 +22,7 @@ html {
   // outline: 2px solid red;
 }
 body {
+  min-width: 320px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -25,7 +30,46 @@ body {
   letter-spacing: 0.03em;
   color: #555555;
 }
+h1 {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 40px;
 
+  font-weight: 900;
+  // font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 42px;
+  /* or 162% */
+
+  color: $color_text-light;
+  @include for-size(mobile-only) {
+    min-width: 300px;
+    font-size: 20px;
+    line-height: 162%;
+  }
+
+  @include for-size(mobile) {
+  }
+
+  @include for-size(tablet) {
+    font-size: 26px;
+    line-height: 42px;
+    /* or 162% */
+  }
+
+  @include for-size(desktop) {
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+  }
+}
 img {
   display: block;
   max-width: 100%;
@@ -84,12 +128,14 @@ img {
   }
 }
 
-.greed {
+.grid {
   display: flex;
   flex-wrap: wrap;
+  // justify-content: center;
+
   width: 100%;
 }
-.greed__item {
+.grid__item {
   display: flex;
   flex-wrap: wrap;
   //   height: 100px;
@@ -97,4 +143,34 @@ img {
   padding: 0px;
   // background-color: $color_team-background;
   outline: 1px solid red;
+}
+
+.button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: $color_button-background;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: $color_active-2;
+
+  transition-property: box-shadow;
+  transition: $transition-common;
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+  }
+}
+.button__text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 187%;
+  /* identical to box height, line-height: 30px; */
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: currentColor;
 }

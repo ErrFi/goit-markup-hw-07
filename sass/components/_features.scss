@@ -1,5 +1,6 @@
 @import "../../sass/utils/variables";
 @import "../utils/placeholders";
+@import "../utils/mixins";
 .features {
   @include for-size(mobile) {
     display: flex;
@@ -17,7 +18,7 @@
 .title--features {
   //   display: none;
 }
-.greed__item--feature {
+.grid__item--feature {
   position: relative;
   //   height: 294px;
   // width: auto;

@@ -1,0 +1,35 @@
+@import "../../sass/utils/variables";
+@import "../utils/placeholders";
+@import "../utils/mixins";
+
+.header {
+  background-color: $color_header-background;
+}
+.container__header {
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: pink;
+
+  @include for-size(mobile-only) {
+    width: 100%;
+  }
+
+  @include for-size(mobile) {
+    width: $width_mobile;
+  }
+
+  @include for-size(tablet) {
+    width: $width_tablet;
+    padding: 21px 15px;
+  }
+
+  @include for-size(desktop) {
+    width: $width_desktop;
+    padding: 24px 215px;
+  }
+}

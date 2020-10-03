@@ -75,3 +75,7 @@
   justify-content: center;
   width: 100%;
 }
+
+.button__hero {
+  @extend %button;
+}

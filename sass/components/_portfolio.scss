@@ -11,6 +11,33 @@
   @extend %container;
   //   height: 200px;
 }
+.grid--filters {
+  @extend %grid;
+  justify-content: center;
+  @include for-size(mobile) {
+    margin-bottom: 40px;
+  }
+  @include for-size(tablet) {
+    margin-bottom: 30px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
+}
+.filters__item {
+  &:not(:last-child()) {
+    margin-right: 8px;
+  }
+}
+.link__portfolio {
+  @extend %link;
+}
+.button__portfolio--filter {
+  @extend %button;
+  width: auto;
+  padding-left: 22px;
+  padding-right: 22px;
+}
 .grid--galery {
   justify-content: center;
   @include for-size(tablet) {

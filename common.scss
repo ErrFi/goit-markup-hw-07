@@ -76,6 +76,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.icon {
+  //   display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
 .section_title {
   margin: 0px;
   margin-bottom: 30px;
@@ -92,36 +98,19 @@ img {
   @include for-size(tablet) {
     margin-bottom: 30px;
   }
-
   @include for-size(desktop) {
     margin-bottom: 50px;
   }
-
-  // margin-bottom: 50px; // is for desktop
-  // font-size: 36px; // is for desktop
-  // line-height: 42px; // is for desktop
 }
 @import "./sass/components/list";
-// .link {
-//   text-decoration: none;
-//   color: inherit;
-//   &:visited {
-//     color: inherit;
-//   }
-//   &:hover,
-//   &.current {
-//     color: $color_active-1;
-//   }
-// }
+
 .link {
   @extend %link;
 }
 
 .link_social {
   @extend %link;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include CenteredFlex();
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -130,7 +119,8 @@ img {
   transition: $transition-common;
   &:hover {
     background-color: $color_active-1;
-    fill: $color_active-2;
+    // fill: $color_active-2;
+    color: $color_active-2;
   }
 }
 
@@ -146,15 +136,19 @@ img {
   margin: 0px;
   padding: 0px;
   // background-color: $color_team-background;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 .button__text {
   font-weight: bold;
   font-size: 16px;
   line-height: 187%;
-  /* identical to box height, line-height: 30px; */
   text-align: center;
   letter-spacing: 0.06em;
   color: currentColor;
 }
+
+.button__icon {
+  width: 1.5rem;
+}
+// == For Test ============================>

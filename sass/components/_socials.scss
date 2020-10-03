@@ -5,12 +5,13 @@
   justify-content: center;
   //   width: 206px;
 }
-// ====icons====
-.icon {
-  //   display: inline-block;
-  stroke-width: 0;
-  stroke: currentColor;
+.list_item--socials {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
+// ====icons====
+
 .social_icon {
   height: 20px;
   width: 20px;

@@ -1,13 +1,14 @@
 @import "./variables";
 @import "./mixins";
 %container {
-  min-width: 320px;
+  min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
   padding: 60px 15px;
 
   @include for-size(mobile-only) {
     width: 100%;
+    padding: 0px 1rem;
   }
 
   @include for-size(mobile) {
@@ -59,7 +60,7 @@
 
 %link {
   text-decoration: none;
-  color: inherit;
+  color: currentColor;
   &:visited {
     text-decoration: none;
     color: inherit;

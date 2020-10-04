@@ -70,8 +70,36 @@
     display: none;
   }
 }
+.menu-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.btn-shown {
+  opacity: 1;
+  visibility: visible;
+}
+.btn-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.header__button--toggle-menu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.btn--hide {
+  opacity: 1;
+  visibility: visible;
+}
+.btn--show {
+  opacity: 0;
+  visibility: hidden;
+}
 .menu--mobile {
   background-color: $color_header-background;
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity;
   @include for-size(mobile-only) {
     position: absolute;
     bottom: 0px;

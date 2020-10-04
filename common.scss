@@ -12,6 +12,7 @@
 @import "./sass/components/logo";
 @import "./sass/components/footer";
 @import "./sass/components/portfolio";
+@import "./sass/components/modal";
 
 html {
   box-sizing: border-box;
@@ -152,3 +153,31 @@ img {
   width: 1.5rem;
 }
 // == For Test ============================>
+:root {
+  --active-1: #2196f3;
+  --active-2: #ffffff;
+  --icon-header: #757575;
+  --icon-team: #afb1b8;
+  --icon-clients: #afb1b8;
+  --icon-footer: #ffffff;
+
+  --text-dark: #212121;
+  --text-grey: #757575;
+  --text-light: #ffffff;
+  --text-transp: rgba(255, 255, 255, 0.6);
+
+  --baner-underlay: #2f303a;
+  --header-background: #fff;
+  --portfolio-background: #fff;
+
+  --transition-duration: 500ms;
+}
+/* ===== Utility classes ===== */
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
